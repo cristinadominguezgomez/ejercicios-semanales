@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3-Formularios</title>
+    <meta name="author" content="Cristina Domínguez" />
+    <meta
+      name="description"
+      content="Ejercicio 3 Hacer la estructura en HTML del formulario siguiendo las indicaciones"
+    />
+  </head>
+
+  <body>
+    <main>
+      <form action="#" method="get">
+        <p>
+          <label for="search">Buscador</label>
+          <input id="search" type="text" name="search" disabled />
+        </p>
+        <fieldset>
+          <legend>Datos personales</legend>
+
+          <p>
+            <label for="name">Nombre</label>
+            <input id="name" type="text" name="name" required autofocus />
+          </p>
+
+          <p>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" required />
+          </p>
+
+          <p>
+            <label for="url">Url</label>
+            <input
+              id="url"
+              type="url"
+              name="url"
+              placeholder="Escribe la URL de tu página web personal"
+            />
+          </p>
+          <p>
+            <label for="phone">Teléfono</label>
+            <input
+              id="phone"
+              type="tel"
+              name="phone"
+              value="+34 618536927"
+              readonly
+            />
+          </p>
+
+          <p>
+            <label for="number">Número (valores permitidos de -10 a 10)</label>
+            <input id="number" type="number" name="number" min="-10" max="10" />
+          </p>
+
+          <p>
+            <label for="color">Color favorito</label>
+            <input id="color" type="color" name="color" />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Datos temporales</legend>
+
+          <p>
+            <label for="date">Fecha</label>
+            <input id="date" type="date" name="date" />
+          </p>
+
+          <p>
+            <label for="time">Hora</label>
+            <input id="time" type="time" name="time" />
+          </p>
+
+          <p>
+            <label for="datetime">Fecha y hora</label>
+            <input id="datetime" type="datetime-local" name="datetime" />
+          </p>
+
+          <p>
+            <label for="month">Mes</label>
+            <input id="month" type="month" name="month" />
+          </p>
+
+          <p>
+            <label for="week">Semana</label>
+            <input id="week" type="week" name="week" />
+          </p>
+        </fieldset>
+        <button type="submit">Envíar datos</button>
+      </form>
+    </main>
+  </body>
+</html>
